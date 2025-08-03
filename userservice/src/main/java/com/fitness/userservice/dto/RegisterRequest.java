@@ -17,4 +17,12 @@ public class RegisterRequest {
     private String password;
     private String firstName;
     private String lastName;
+
+    public String toString() {
+        return "RegisterRequest{" +
+                "email='" + email + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
 }
