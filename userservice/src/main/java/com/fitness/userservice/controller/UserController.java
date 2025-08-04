@@ -28,4 +28,10 @@ public class UserController {
         Logger.getLogger(UserController.class.getName()).info("Registering user: " + request.toString());
         return ResponseEntity.ok(userService.register(request));
     }
+
+    @GetMapping("/{userId}/validate")
+    public ResponseEntity<Boolean> validateUser(@PathVariable String userId) {
+        Logger.getLogger(UserController.class.getName()).info("Validating user profile for userId: " + userId);
+        return ResponseEntity.ok(userService.existByUserId(userId));
+    }
 }
