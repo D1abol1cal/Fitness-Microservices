@@ -58,10 +58,6 @@
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId></groupId>
-			<artifactId></artifactId>
-		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
